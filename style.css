@@ -40,7 +40,7 @@ a.active,
 a:hover {
     border-left: 5px;
     color: #fff;
-    background: linear-gradient(to left, #1A2B3C, #8EA2C6);
+    background: linear-gradient(to left, #0000FF, #8EA2C6);
 }
 
 .sidebar a i {
@@ -66,10 +66,10 @@ label #cancel {
     margin: 15px 30px;
     font-size: 29px;
     background-color: rgb(255, 153, 0);
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    /* box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
         inset -7px -7px 10px 0px rgba(0, 0, 0, .1),
         3.5px 3.5px 20px 0px rgba(0, 0, 0, .1),
-        2px 2px 5px 0px rgba(0, 0, 0, .1);
+        2px 2px 5px 0px rgba(0, 0, 0, .1); */
     height: 45px;
     width: 45px;
     text-align: center;
@@ -167,12 +167,41 @@ label #cancel {
 }
 
 .page-accueil {
-    background-image: url(./assets/steve-johnson-dVRD8E3XUGs-unsplash.jpg);
+    background-image: url(./assets/Plan-de-travail-1.png);
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
     position: static;
     overflow: hidden;
+}
+
+@media (max-width:1380px) {
+
+    .page-accueil {
+        background-image: url(./assets/Plan-de-travail-2.png);
+    }
+
+}
+@media (max-width:1083px) {
+
+    .page-accueil {
+        background-image: url(./assets/Plan-de-travail-3.png);
+    }
+
+}
+@media (max-width:830px) {
+
+    .page-accueil {
+        background-image: url(./assets/Plan-de-travail-4.png);
+    }
+
+}
+@media (max-width:622px) {
+
+    .page-accueil {
+        background-image: url(./assets/Plan-de-travail-5.png);
+    }
+
 }
 
 .titre-principal {
@@ -206,12 +235,18 @@ label #cancel {
 
 /* ################################################NUANCES######################################################################## */
 
+
 .page-nuance {
     /* background-color: gainsboro; */
     background-image: url(./assets/ivan-bandura-2FEE6BR343k-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+.extra-titre{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 /* .block-nuancier{
@@ -447,7 +482,7 @@ figcaption {
 
 .page-signification{
     background-image: url(./assets/pawel-czerwinski-ruJm3dBXCqw-unsplash.jpg);
-    background-size: cover;
+    background-size: contain;
 
 }
 
@@ -493,3 +528,94 @@ figcaption {
     margin-right: 0;
     margin-left: 20px;
 }
+
+
+/* CITATION */
+
+
+        .page-citation{
+            background-image: url(./assets/pawel-czerwinski-ruJm3dBXCqw-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 2%;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 50px;
+            margin: 20px;
+        }
+        .card {
+            backdrop-filter: blur(20px);
+            background-color: transparent;
+            border: 1px solid #0000FF;
+            border-radius: 10px;
+            padding: 10px;
+            filter:grayscale();
+            box-shadow: 2px 2px 50px #0000FF;
+        }
+        .card:hover{
+            filter:none;
+
+            .texte-cache{
+                color:black;
+            }
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card p {
+            text-align: center;
+            font-weight: bold;
+            color: #0000FF;
+        }
+
+        .card .texte-cache{
+            font-weight: 100;
+            color:transparent;
+        }
+/* 
+        .card .texte-cache:hover{
+            color:black;
+        } */
+
+        /*################################# et vous ############################""" */
+    .last-page{
+        background-image: url(./assets/rosalie-gdy-lrHPEKNPvcU-unsplash.jpg);
+        background-size: cover;
+    }
+
+    form {
+        backdrop-filter: blur(20px);
+        background-color: transparent;
+        width: 80%;
+        margin: 0 auto;
+        /* border: 1px solid #0000FF; */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 90px 100px #0000FF;
+    }
+    label {
+        display: block;
+        color: #ffb300;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    input, textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid #0000FF;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    input[type="submit"] {
+        background-color: #ff9d00;
+        color: white;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    input[type="submit"]:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
