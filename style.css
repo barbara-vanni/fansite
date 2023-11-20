@@ -529,6 +529,25 @@ figcaption {
     margin-left: 20px;
 }
 
+.grid-item .signe{
+    font-family: Urbanist;
+    font-size: 25px;
+}
+
+@media (max-width:1327px) {
+
+    .grid-item .signe{
+     font-size: 20px;
+    }
+
+    .grid-item .img-grid {
+        border-top-left-radius: 250px;
+        border-bottom-left-radius: 250px;
+        height: 90%;
+    }
+ 
+ }
+
 
 /* CITATION */
 
